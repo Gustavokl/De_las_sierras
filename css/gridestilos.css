@@ -15,43 +15,20 @@ body {
 
 /*pagina Index*/
 .containerGrid{
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 0.25fr 1.5fr 1fr 0.5fr 0.25fr;
-    grid-template-areas:"header"
-                        "futuroSlide"
-                        "grupoCasas"
-                        "publicidad"
-                        "footer";
+    
 }
 
 /*header*/
 .header {
-    display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: auto;
-    grid-template-areas: "logo" "parrafo" "nav";
-
-    grid-area: header;
-    background-color: rgba(46, 110, 184, 0.801);
     color: rgb(233, 123, 34);
-    padding-left: 1%;
-    display: flex;
 }
-.header-img {
-    margin-top: 1%;
-    width: 38%;
-}
-.logo{
-    grid-area: logo;
-    width: 40%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+
+
+.bg-propio{
+    background-color: rgba(46, 110, 184, 0.801)!important;
 }
 .nav{
-    grid-area: nav;
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -61,12 +38,12 @@ body {
     font-weight: bold;
 }
 .header nav a:hover{
-    transform: scale(2);
+    transform: scale(1.2);
     transition: transform 500ms ease-out;
 }
 .parrafo{
-    grid-area: parrafo;
-    font-size:2.3rem;
+    
+    font-size:2rem;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
