@@ -1,37 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Lora:ital@1&family=Playfair+Display:ital@1&family=Work+Sans&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
     text-decoration: none;
 }
 body {
     height: 100vh; 
+    width: 100wh;
     background-color: rgb(236, 236, 152);
     overflow-x: hidden;
 }
 
-/*pagina Index*/
-.containerGrid{
-    
-}
+/*pagina INDEX*/
 
 /*header*/
 .header {
     color: rgb(233, 123, 34);
 }
 
-
 .bg-propio{
     background-color: rgba(46, 110, 184, 0.801)!important;
-}
-.nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 .header a{
     color: black;
@@ -42,100 +30,22 @@ body {
     transition: transform 500ms ease-out;
 }
 .parrafo{
-    
     font-size:2rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
-/*.mainIndex{
-
-    background-image: (assets/);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}*/
- /*Slide de fotos*/
- .futuroSlide{
-     grid-area: futuroSlide;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin: 1%;
- }
-
-
- /*Grupo de fotos de cabañas*/
-.grupoCasas{ 
-    display: grid;
-    grid-template-columns: 4;
-    grid-template-rows: auto;
-    grid-template-areas: "c1" "c2" "c3" "c4";
-    
-    
-    display: flex;
-    justify-content: center;
-    align-content: center;
+/*Grupo de fotos de cabañas*/
+.bg-propio2{
+    background-color: rgba(87, 235, 67, 0.801);
+}
+.sombra{
     box-shadow: 0px 0px 10px #000;
     border-radius: 10px;
-    gap: 1%;
 }
-.casas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1%;
-    
-}
-.lista{
-    list-style: none; 
-}
-
-
-/*sponsors, comercios, actividades*/
-.publicidad{
-    display: grid;
-    grid-template-columns: 4;
-    grid-template-rows: auto;
-    grid-template-areas: "p1" "p2" "p3" "p4";
-
-    grid-area: publicidad;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 1%;
-    margin: 1%;
-    padding: 1%;
-}
-.promocion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1%;
-    border: solid rgb(243, 114, 63);
-    border-radius: 10px;
-    padding: 1%;
-}
-.listaPromocion{
-    list-style: none;
-    color: black;
-}
-
-
 
  /*footer*/
 .footer {
-    grid-area: footer;
     background-color: rgba(46, 110, 184, 0.801);
     color: rgb(233, 123, 34);
-    padding-left: 1%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 .footer a{
     color: black;
@@ -147,141 +57,39 @@ body {
 }
 
 
-/*pagina Contacto*/
-.gridContacto{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 0.25fr 3.5fr 0.5fr;
-    grid-template-areas:"header"
-                        "contacto"
-                        "footer";
-}
-.contacto{
-    grid-area: contacto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 1%;
-    margin: 5%;
-}
+/*pagina CONTACTO*/
 .form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1%;
     border: solid rgb(243, 114, 63);
     border-radius: 10px;
     padding: 2%;
 }
 
 
-/*pagina Galeria*/
 
-.gridGaleria{
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows:repeat(6, auto);
-    grid-template-areas:"header"
-                        "caba1"
-                        "caba2"
-                        "caba3"
-                        "caba4"
-                        "footer";
 
-}
-.caba1{
-    
-    grid-area: caba1;
-    display: grid;
-    grid-template-columns: 5;
-    grid-template-rows: auto;
-    grid-template-areas: "c1" "c2" "c3" "c4" "c5";
-    display: flex;
-    padding: 2%;
-    justify-content: center;
-    align-content: center;
-}
+/*pagina GALERIA*/
+
 .c1:hover {
-    transform: scale(1.8);
-}
-.caba2{
-    grid-area: caba2;
-    display: grid;
-    grid-template-columns: 5;
-    grid-template-rows: auto;
-    grid-template-areas: "c6" "c7" "c8" "c9" "c10";
-    display: flex;
-    padding: 2%;
-    justify-content: center;
-    align-content: center;
+    transform: scale(1.5);
 }
 .c6:hover {
-    transform: scale(1.8);
-}
-.caba3{
-    grid-area: caba3;
-    display: grid;
-    grid-template-columns: 5;
-    grid-template-rows: auto;
-    grid-template-areas: "c11" "c12" "c13" "c14" "c15";
-    display: flex;
-    padding: 2%;
-    justify-content: center;
-    align-content: center;
+    transform: scale(1.5);
 }
 .c11:hover {
-    transform: scale(1.8);
-}
-.caba4{
-    grid-area: caba4;
-    display: grid;
-    grid-template-columns: 5;
-    grid-template-rows: auto;
-    grid-template-areas: "c16" "c17" "c18" "c19" ;
-    display: flex;
-    padding: 2%;
-    justify-content: center;
-    align-content: center;
+    transform: scale(1.5);
 }
 .c16:hover {
-    transform: scale(1.8);
+    transform: scale(1.5);
 }
 
 
-/*pagina Informacion*/
+
+
+/*pagina INFORMACION*/
 .gradiente{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(to right rgb(236, 236, 152), rgba(255, 166, 0, 0.774), rgba(85, 216, 85, 0.507));
+    background-image: linear-gradient(rgba(166, 166, 240, 0.466),rgba(255, 166, 0, 0.384),rgba(131, 236, 131, 0.473));
 }
-.gridInformacion{
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows:repeat(6, auto);
-    grid-template-areas:"header"
-                        "pad"
-                        "pad1"
-                        "pad2"
-                        "pad3"
-                        "pad4"
-                        "footer";
-}
-.pad{
-    width: auto;
-    grid-area: pad;
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-}
-
 .pad1{
-    grid-area: pad1;
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    gap: 4%;
     animation-name: color;
     animation-duration: 8s;
 }
@@ -296,14 +104,6 @@ body {
         background-color: rgba(58, 241, 58, 0.658);
     }
 }
-
-.pad2{
-    grid-area: pad2;
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    gap: 4%;
-}
 .pa{
     border: solid rgb(243, 114, 63);
     border-radius: 10px;
@@ -312,212 +112,19 @@ body {
 .pa p{
 font-weight: bold;
 }
-
 .pad3{
-    grid-area: pad3;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2%;
     border: solid rgb(243, 114, 63);
     border-radius: 10px;
-    padding: 2%;
-    justify-content: center;
 }
-.pad3 p{
-    display: flex;
-    justify-content: flex-start;
-    padding: 2%;
-}
-.t{
-    display: flex;
-    width: 100%;
-    margin-bottom: 2%;
-}
-.pad4{
-    grid-area: pad4;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2%;
-}
-
 .p img:hover{
     transform: skew(-5deg, -5deg);
 }
 
-/*pagina Nosotros*/
-.gridNosotros{
-    gap: 2%;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows:repeat(7, auto);
-    grid-template-areas: "header"
-                         "video"
-                        "presentacion"
-                        "naturaleza"
-                        "res"
-                        "videoNatura"
-                        "footer";
-}
 
-.video{
-    grid-area: video;
-    display: flex;
-    justify-content: center;
-}
-.presentacion{
-    grid-area: presentacion;
-    margin: 1%;
-}
-.naturaleza{
-    grid-area: naturaleza;
-    margin: 1%;
-    display: flex;
-    flex-direction: column;
-}
-.turismo{
-    display: flex;
-    gap: 4%;
-}
 
-.res{
-    grid-area: res;
-    margin: 1%;
-}
-.videoNatura{
-    grid-area: videoNatura;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2%;
-}
-.txt{
-    width: 50%;
-}
+
+/*pagina NOSOTROS*/
+
 .animate__animated.animate__bounce {
-    --animate-duration: 4s;
+    --animate-duration: 6s;
   }
-
-
-/*cambio de pantalla*/
-@media screen and (max-width: 780px) {
-    /*Index*/
-    .containerGrid{
-        grid-template-rows: 0.25fr 0.25fr 0.5fr 0.5fr 0.25fr;
-    }
-    .header {
-        height: 70%;
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: auto;
-        grid-template-areas: "logo" 
-                            "parrafo" 
-                            "nav";
-    }
-    .header-img {
-        margin-top: 1%;
-        width: 20%;
-    }
-    .parrafo{
-        
-        font-size:1.3rem;
-        
-    }
-    .nav{
-        width: 90%;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .grupoCasas{ 
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: auto;
-        grid-template-areas: "c1" 
-                            "c2" 
-                            "c3" 
-                            "c4";
-        padding: 5%;
-    }
-    .publicidad{
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: auto;
-        grid-template-areas: "p1" 
-                            "p2" 
-                            "p3" 
-                            "p4";
-    }
-    .footer {
-       height: 50%;
-    }
-
-    /*contacto*/
-    .gridContacto{
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: 1fr 3.5fr 1fr;
-        grid-template-areas:"header"
-                            "contacto"
-                            "footer";
-    }
-
-    /*galeria*/
-    .caba1{
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: auto;
-        grid-template-areas: "c1" 
-                            "c2" 
-                            "c3" 
-                            "c4" 
-                            "c5";
-    }
-    .caba2{
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: auto;
-        grid-template-areas: "c6" 
-                            "c7" 
-                            "c8" 
-                            "c9" 
-                            "c10";
-    }
-    .caba3{
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: auto;
-        grid-template-areas: "c11" 
-                            "c12" 
-                            "c13" 
-                            "c14" 
-                            "c15";
-        
-    }
-    .caba4{
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: auto;
-        grid-template-areas: "16" 
-                            "17" 
-                            "18" 
-                            "19";
-    }
-    /*Informacion   no use grid interno, solucione con flexbox*/
-    .pad1{
-        flex-flow: wrap;
-    }
-    .pad2{
-        flex-flow: wrap;
-    }
-    .pad3{
-        flex-flow: wrap;
-    }
-    .pad4{
-        flex-direction: column;
-    }
-    .video{
-        flex-direction: column;
-        width: 380px;
-    }
-    
-}
