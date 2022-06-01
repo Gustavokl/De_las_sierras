@@ -1,0 +1,43 @@
+.gradiente{
+    background-image: linear-gradient(rgba(166, 166, 240, 0.466),rgba(255, 166, 0, 0.384),rgba(131, 236, 131, 0.473));
+}
+.pad1{
+    animation-name: color;
+    animation-duration: 8s;
+}
+@keyframes color{
+    0%{
+        background-color: rgba(255, 0, 0, 0.384)
+    }
+    50%{
+        background-color: $letra_borde;
+    }
+    100%{
+        background-color: rgba(58, 241, 58, 0.658);
+    }
+}
+
+
+/*.pa{
+    border: solid rgb(243, 114, 63);
+    border-radius: 10px;
+    padding: 1.5%;
+    p{
+        font-weight: bold;
+        }
+}*/
+.pa {
+    border: solid $letra_borde;
+    border-radius: 10px;
+    padding: 1.5%; 
+  }
+  .pa p {
+    font-weight: bold; 
+  }
+.pad3{
+    border: solid $letra_borde;
+    border-radius: 10px;
+}
+.p img:hover{
+    transform: skew(-5deg, -5deg);
+}

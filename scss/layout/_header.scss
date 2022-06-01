@@ -1,0 +1,29 @@
+/*.header {
+    color: rgb(233, 123, 34);
+    nav a:hover{
+        transform: scale(1.1);
+        transition: transform 500ms ease-out;
+        &{
+            color: black;
+            font-weight: bold;
+        }
+    }
+}*/
+
+.header {
+    color: $letra_borde; }
+.nav a:hover {
+      transform: scale(1.1);
+      transition: transform 500ms ease-out; }
+.nav a {
+        color: black;
+        font-weight: bold; }
+
+
+
+.bg-propio{
+    background-color: $fondo!important;
+}
+.parrafo{
+    font-size:2rem;
+}
