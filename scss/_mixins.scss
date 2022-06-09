@@ -1,0 +1,4 @@
+@mixin bordear($color-borde:solid $letra_borde,$borde-curvo:$borde){
+    border: $color-borde;
+    border-radius: $borde-curvo;
+}

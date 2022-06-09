@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De las Sierras</title>
+    <title>De las Sierras Cabañas de alquiler - Villa Serrana</title>
+    <meta name="keywords" content="casas de alquiler, cabañas de alquiler en las sierras, turismo, paseos">
+    <meta name="description" content="De las Sierras ofrece: su lugar para disfrutar del turismo, descanso, recreacion, paseos, senderismo, bicisendas, gastronomia nativa y mucho mas">
     <link rel="shortcut icon" href="./assets/images/favicon_hoja.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!--link aos-->
+    
 
 </head>
 
@@ -19,7 +21,7 @@
     <header class="header">
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light bg-light bg-propio">
-                <div class="container-fluid d-flex justify-content-center">
+                <div class="container-fluid d-flex justify-content-center align-items-center">
                     <div class="parrafo col-lg-5 col-md-12">
                         <p> De las Sierras Cabañas de alquiler </p>
                     </div>
@@ -58,21 +60,21 @@
     <main>
         <!--Carousel-->
         
-        <div class="container-fluid mt-3 mb-3 ms-2 d-flex justify-content-center align-items-center">
-            <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+        <div class="container-fluid d-flex justify-content-center align-items-center alto">
+            <div id="carouselExampleControls" class="carousel " data-bs-ride="carousel">
                 <div class="carousel-inner ">
                     <div class="carousel-item active">
-                        <img src="assets/images/sierras.jpg" class="d-block w-100" style="object-fit:contain;"
+                        <img src="assets/images/sierras.jpg" srcset="assets/images/sierras_600 600w, assets/images/sierras_800 800w, assets/images/sierras.jpg 1920w" class="d-block w-100" style="object-fit:contain;" 
                             alt="sierras">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/images/camino.jpg" class="d-block w-100"  alt="camino">
+                        <img src="assets/images/camino.jpg" srcset="assets/images/camino_600 600w, assets/images/camino_800 800w, assets/images/camino.jpg 1920w" class="d-block w-100"  alt="camino">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/images/amanecer.jpg" class="d-block w-100" alt="amanecer">
+                        <img src="assets/images/amanecer.jpg" srcset="assets/images/amanecer_600 600w, assets/images/amanecer_800 800w, assets/images/amanecer.jpg 1920w" class="d-block w-100" alt="amanecer">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/images/arbol.jpg" class="d-block w-100" alt="arbol">
+                        <img src="assets/images/arbol.jpg" srcset="assets/images/arbol_600 600w, assets/images/arbol_800 800w, assets/images/arbol.jpg 1920w" class="d-block w-100" alt="arbol">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -80,7 +82,7 @@
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <!--class="btn btn-danger" donde va para darle color a los botones indicadores del carousel?-->
+                
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -143,14 +145,14 @@
 
     <div class="container-fluid">
         <!--publicidad y servicios-->
-        <div class="row d-flex flex-row justify-content-evenly align-items-center">
-            <div class=" col-lg-3 d-flex flex-row justify-content-around align-items-center">
+        <div class="row mb-2 d-flex flex-row justify-content-evenly align-items-center">
+            <div class="box col-lg-3 d-flex flex-row justify-content-around align-items-center">
                 <a href="https://www.portaldevillaserrana.com.uy/es/servicios/donde-comer/la-mia-cucina-del-octogono/"
                     target="_blank">
-                    <img src="assets/images/sponsor1.jpg" class="rounded" alt="publicidad">
+                    <img loading="lazy" src="assets/images/sponsor1.jpg" class="rounded" alt="publicidad">
                 </a>
             </div>
-            <div class=" col-lg-3 d-flex flex-row justify-content-around align-items-center">
+            <div class="caja_info col-lg-3 d-flex flex-row justify-content-around align-items-center">
                 <a href="paginas/informacion.html#comercios" class="text-decoration-none">
                     <ul class="listaPromocion">
                         <li>Supermercados</li>
@@ -160,7 +162,7 @@
                     </ul>
                 </a>
             </div>
-            <div class=" col-lg-3 d-flex flex-row justify-content-around align-items-center">
+            <div class="caja_info col-lg-3 d-flex flex-row justify-content-around align-items-center">
                 <a href="paginas/informacion.html#actividades" class="text-decoration-none">
                     <ul class="listaPromocion text-decoration-none">
                         <li>Cabalgatas</li>
@@ -172,10 +174,10 @@
                     </ul>
                 </a>
             </div>
-            <div class=" col-lg-3 mb-5 d-flex flex-row justify-content-around align-items-center">
+            <div class="box col-lg-3 d-flex flex-row justify-content-around align-items-center">
                 <a href="https://www.portaldevillaserrana.com.uy/es/servicios/construccion-y-mantenimiento/piscinas-casas-prefabricadas-steel-framingmadera-y-muros"
                     target="_blank">
-                    <img src="assets/images/sponsor3.jpg" class="rounded" alt="publicidad">
+                    <img loading="lazy" src="assets/images/sponsor3.jpg" class="rounded" alt="publicidad">
                 </a>
             </div>
         </div>

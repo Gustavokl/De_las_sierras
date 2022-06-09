@@ -2,6 +2,5 @@
     background-image: linear-gradient(rgba(233, 124, 34, 0.644), rgb(236, 236, 152), rgba(233, 124, 34, 0.671));
 }
 .form{
-    border: solid $letra_borde;
-    border-radius: 10px;
+    @include bordear;
 }

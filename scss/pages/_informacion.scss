@@ -7,7 +7,7 @@
 }
 @keyframes color{
     0%{
-        background-color: rgba(255, 0, 0, 0.384)
+        background-color: rgb(114, 67, 14)
     }
     50%{
         background-color: $letra_borde;
@@ -18,25 +18,16 @@
 }
 
 
-/*.pa{
-    border: solid rgb(243, 114, 63);
-    border-radius: 10px;
+pa{
+    @include bordear;
     padding: 1.5%;
     p{
-        font-weight: bold;
+        font-weight:map-get($mapa_blacknegrita,negrita)
         }
-}*/
-.pa {
-    border: solid $letra_borde;
-    border-radius: 10px;
-    padding: 1.5%; 
-  }
-  .pa p {
-    font-weight: bold; 
-  }
+}
+
 .pad3{
-    border: solid $letra_borde;
-    border-radius: 10px;
+    @include bordear;
 }
 .p img:hover{
     transform: skew(-5deg, -5deg);

@@ -6,38 +6,57 @@ body {
   overflow-x: hidden;
 }
 
+.alto {
+  height: 50vh !important;
+}
+
 * {
   font-family: 'Work Sans', sans-serif;
   text-decoration: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.caja_info {
+  @extend .box;
+  width: 350%;
+}
+
 /*.header {
-    color: rgb(233, 123, 34);
-    nav a:hover{
-        transform: scale(1.1);
-        transition: transform 500ms ease-out;
-        &{
-            color: black;
-            font-weight: bold;
+    color: $fondo;
+
+    nav {
+        a:hover {
+            transform: scale(1.1);
+            transition: transform 500ms ease-out;
+
+
+            &:hover {
+                color: map-get($mapa_blacknegrita, letra);
+                font-weight: map-get($mapa_blacknegrita, negrita)
+            }
         }
+
     }
 }*/
 .header {
-  color: #e97b22;
+  color: rgba(46, 110, 184, 0.801);
 }
 
-.nav a:hover {
+.header nav a:hover {
+  color: black;
+  font-weight: bold;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: -webkit-transform 500ms ease-out;
   transition: -webkit-transform 500ms ease-out;
   transition: transform 500ms ease-out;
   transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
-}
-
-.nav a {
-  color: black;
-  font-weight: bold;
 }
 
 .bg-propio {
@@ -58,18 +77,6 @@ body {
   border-radius: 10px;
 }
 
-/*.footer {
-    background-color: rgba(46, 110, 184, 0.801);
-    color: #e97b22; 
-    a{
-        color: black;
-        font-weight: bold;
-    }
-}
-.contacto:hover{
-    transform: scale(1.1);
-    transition: transform 500ms ease-in-out;
-}*/
 .footer {
   background-color: rgba(46, 110, 184, 0.801);
   color: #e97b22;
@@ -97,6 +104,8 @@ body {
 .form {
   border: solid #e97b22;
   border-radius: 10px;
+  /*border: solid $letra_borde;
+    border-radius: $borde;*/
 }
 
 .c1:hover {
@@ -133,7 +142,7 @@ body {
 
 @-webkit-keyframes color {
   0% {
-    background-color: rgba(255, 0, 0, 0.384);
+    background-color: #72430e;
   }
   50% {
     background-color: #e97b22;
@@ -145,7 +154,7 @@ body {
 
 @keyframes color {
   0% {
-    background-color: rgba(255, 0, 0, 0.384);
+    background-color: #72430e;
   }
   50% {
     background-color: #e97b22;
@@ -155,21 +164,13 @@ body {
   }
 }
 
-/*.pa{
-    border: solid rgb(243, 114, 63);
-    border-radius: 10px;
-    padding: 1.5%;
-    p{
-        font-weight: bold;
-        }
-}*/
-.pa {
+pa {
   border: solid #e97b22;
   border-radius: 10px;
   padding: 1.5%;
 }
 
-.pa p {
+pa p {
   font-weight: bold;
 }
 
