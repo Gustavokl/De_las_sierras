@@ -1,4 +1,4 @@
 .caja_info{
-  @extend.box;
+  @extend.box !optional;
   width: 350%;
 }
