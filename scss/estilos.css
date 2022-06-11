@@ -27,23 +27,6 @@ body {
   width: 350%;
 }
 
-/*.header {
-    color: $fondo;
-
-    nav {
-        a:hover {
-            transform: scale(1.1);
-            transition: transform 500ms ease-out;
-
-
-            &:hover {
-                color: map-get($mapa_blacknegrita, letra);
-                font-weight: map-get($mapa_blacknegrita, negrita)
-            }
-        }
-
-    }
-}*/
 .header {
   color: rgba(46, 110, 184, 0.801);
 }
@@ -104,8 +87,6 @@ body {
 .form {
   border: solid #e97b22;
   border-radius: 10px;
-  /*border: solid $letra_borde;
-    border-radius: $borde;*/
 }
 
 .c1:hover {
